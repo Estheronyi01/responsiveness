@@ -104,7 +104,7 @@ button {
 }
 @media (min-width: 768px) {
   body {
-    background: url(./bg-intro-desktop.png)no-repeat center;
+    background-image: url(./bg-intro-desktop.png)no-repeat center;
     background-color: var(--red);   
   }
   .container {
