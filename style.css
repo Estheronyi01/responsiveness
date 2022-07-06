@@ -17,7 +17,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background: url(./bg-intro-mobile.png) no-repeat center ;  
+    background: url(./bg-intro-desktop.png) no-repeat center ;  
     background-color: var(--red);
     justify-content: center;
     align-items: center;
