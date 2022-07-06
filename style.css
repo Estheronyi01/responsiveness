@@ -1,28 +1,47 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-main{
+html {
+    font-size: 16px;
+}
+body {
     display: flex;
-    background-image: url (big intro desktop.png);  
-    background-color: hsl(0, 100%, 74%);
+    flex-direction: column;
+    background: url(./big-intro-mobile.png) no-repeat center ;  
+    background-color: var(--red);
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: poppins;
+    font-family: 'Poppins' sans-serif;
 }
-.left_content{
-    margin-right: 100px;
-    margin-bottom: 50px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 1.3rem 1.9rem;
+    max-width: 350px;
 }
-.left_content h1{
-    color:white;
-    font-size: 50px;
-    margin-bottom: 30px;
+.content {
+    text-align: center;
 }
-.left_content p{
-    color: #fff;
+.content h1 {
+    color:#fefefe;
+    width: 80%;
+    margin: 1rem auto;
+}
+.content p {
+    color: #fefefe;
     word-spacing: 1px;
+    margin-bottom: 2.9rem;
 }
 .trial{
     padding: 20px;
@@ -33,49 +52,55 @@ main{
     color: #fff;
     border: none;
 }
-.right_content form{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 5em;
+.form__content{
+     width: 90%;
 }
-.right_content form button{
+.form__paragraph{
+    margin: 1rem auto;
     text-align: center;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 0.5rem;
+    padding: 1rem;
     color: #fff;
-    background-color: hsl(154, 59% 51%);
+    background-color: var(--blue);
 }
-.right_content form p a{
-    color: hsl(0, 100%, 74%)
+.form__paragraph p span {
+    font-weight: 700;
 }
-.right_content form p{
-    margin-top: 15px;
+.form__container {
+    background-color: #fefefe;
+    border-radius: 0.5rem;
 }
-input[type="text"] :required:invalid,
-input[type="email"] :required:invalid,
-input[type="password"] :required:invalid,{
-    border: 1px solid hsl(0, 100%, 74%);
-    background: url(icon-error.svg) no-repeat 95%;
-    background-size: 20px;
+form{
+    padding: 1rem;
 }
-body{
-    margin: 0;
-}
-main{
+form input{
+    display: block;
+    padding: 1rem;
+    margin-top: 1rem;
     width: 100%;
-    flex-direction: column;
-    background: url(bg-intro-mobile.png);
-    justify-content: center;
-    align-content: center;
-    height: 100%;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 0.7rem;
 }
-.leftt_content h1{
-    color: white;
-    font-size: 30px;
-    margin-bottom: 5px;
+form input ::placeholder {
+    font-weight: 700;
+    color: rgba(60, 62, 72, 1);
+}
+button {
+    background-color: hsl(148, 57%, 58%);
+    border: 1px solid hsl(154, 59%, 45%);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px hsl(154, 59%, 45%);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 1px;
+    width: 100%;
+    
 }
 
 
