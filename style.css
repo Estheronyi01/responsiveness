@@ -23,9 +23,13 @@ body {
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
-  background: url(./bg-intro-mobile.png) no-repeat center; 
+  background: url(./images/bg-intro-mobile.png) no-repeat center; 
   background-color: var(--red); 
 } 
+h4 {
+  color: orangered;
+  background-color: orangered;
+}
  
 .container { 
   display: flex; 
@@ -120,7 +124,7 @@ button:focus {
 } 
  
 button:active { 
-  box-shadow: 0 0 hsl(154, 59%, 45%); 
+  box-shadow: hsl(154, 59%, 45%); 
   transform: translateY(2px); 
 } 
  
@@ -141,7 +145,7 @@ button:active {
  
 @media (min-width: 768px) { 
   body { 
-    background: url(./bg-intro-desktop.png) no-repeat center; 
+    background: url(./images/bg-intro-desktop.png) no-repeat center; 
     background-color: var(--red); 
   } 
   .container { 
