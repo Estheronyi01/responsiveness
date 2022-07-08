@@ -133,6 +133,9 @@ button:active {
   padding: 0 1.5rem 2rem; 
   font-size: 0.9rem; 
 } 
+.botton0 {
+  background-color: hsl(248, 32%, 49%);
+}
  
 .terms small { 
   color: var(--grayish-Blue); 
